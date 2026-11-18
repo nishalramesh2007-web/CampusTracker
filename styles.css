@@ -1,0 +1,31 @@
+:root { --bg:#f5f6fa; --card:#fff; --ink:#1c2230; --muted:#6b7280; --line:#e5e7eb; --brand:#2f5bea; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--ink); }
+header { display:flex; justify-content:space-between; align-items:center; padding:12px 24px; background:var(--card); border-bottom:1px solid var(--line); }
+header h1 { font-size:18px; margin:0; }
+main { max-width:1100px; margin:24px auto; padding:0 16px; display:grid; gap:16px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px; }
+.card h2 { margin:0 0 12px; font-size:16px; }
+.row { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+.grid { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+.stat b { font-size:26px; display:block; }
+input, select, textarea, button { font:inherit; padding:8px 10px; border:1px solid var(--line); border-radius:6px; }
+textarea { width:100%; min-height:70px; }
+input, select { min-width:0; }
+.stack { display:grid; gap:8px; }
+button { background:var(--brand); color:#fff; border:0; cursor:pointer; }
+button.ghost { background:transparent; color:var(--brand); border:1px solid var(--brand); }
+button.small { padding:4px 8px; font-size:12px; }
+table { width:100%; border-collapse:collapse; font-size:14px; }
+th, td { text-align:left; padding:8px; border-bottom:1px solid var(--line); vertical-align:top; }
+.badge { display:inline-block; padding:2px 8px; border-radius:99px; font-size:12px; background:#e5e7eb; }
+.s-open { background:#dbeafe; } .s-in_progress { background:#fef3c7; } .s-resolved { background:#d1fae5; }
+.s-escalated { background:#fee2e2; } .s-closed { background:#e5e7eb; }
+.p-critical, .p-high { background:#fee2e2; } .p-medium { background:#fef3c7; } .p-low { background:#e5e7eb; }
+.bar { height:14px; background:var(--brand); border-radius:3px; }
+.muted { color:var(--muted); font-size:13px; }
+.error { color:#b91c1c; font-size:14px; }
+.auth { max-width:360px; margin:80px auto; }
+.tabs { display:flex; gap:8px; }
+.tabs button { background:transparent; color:var(--ink); border:1px solid var(--line); }
+.tabs button.active { background:var(--brand); color:#fff; border-color:var(--brand); }
